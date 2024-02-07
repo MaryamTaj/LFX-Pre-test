@@ -25,13 +25,13 @@ $ cmake -GNinja -Bbuild -DCMAKE_BUILD_TYPE=Release \
   -DWASMEDGE_PLUGIN_WASI_NN_GGML_LLAMA_BLAS=OFF \  
   .
 ```
-<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/cmake" width="200" height="200">
+<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/cmake" width="400" height="400">
 
 ```bash
 $ cmake --build build
   cmake –install build
 ```
-<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/cmake%20%E2%80%93install%20build" width="200" height="200">
+<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/cmake%20%E2%80%93install%20build" width="400" height="400">
 
 ## Model Selection:
 I chose the larger llama-2-13b parameter model, because it can answer more complex questions. I was curious to see its capabilities!
