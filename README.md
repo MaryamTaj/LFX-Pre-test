@@ -25,7 +25,7 @@ $ cmake -GNinja -Bbuild -DCMAKE_BUILD_TYPE=Release \
   -DWASMEDGE_PLUGIN_WASI_NN_GGML_LLAMA_BLAS=OFF \  
   .
 ```
-<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/cmake" width="400" height="400">
+<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/cmake" width="500" height="400">
 
 ```bash
 $ cmake --build build
@@ -48,3 +48,22 @@ wasmedge --dir .:. \
   --nn-preload default:GGML:AUTO:llama-2-7b-chat.Q5_K_M.gguf \
   wasmedge-ggml-llama.wasm default
 ```
+
+## whisper.cpp
+
+1. To create a local version of the remote repository, I cloned it using the terminal:
+   <br>
+` $ git clone https://github.com/ggerganov/whisper.cpp.git`
+2. I downloaded a Whisper model converted in ggml format:
+   <br>
+` $ bash ./models/download-ggml-model.sh base.en`
+3. I then built the main example:
+   <br>
+` $ make`
+<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/make" width="600" height="400">
+
+5. I transcribed the audio file:
+   <br>
+` $ ./main -f samples/jfk.wav`
+<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/transcribe" width="600" height="400">
+
