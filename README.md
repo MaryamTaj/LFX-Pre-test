@@ -8,7 +8,7 @@ This repository includes the pre-test for the LFX Mentorship (Mar-May, 2024) Pro
 ### Local Version:
 To create a local version of the remote repository, I cloned it using the terminal.
 1. `$ git clone https://github.com/WasmEdge/WasmEdge.git`
-2. `git checkout hydai/0.13.5_ggml_lts`
+2. `$ git checkout hydai/0.13.5_ggml_lts`
 
 ### Software Dependencies:
 I also installed the following dependencies:
@@ -65,6 +65,8 @@ wasmedge --dir .:. \
 
 5. I transcribed the audio file:
    <br>
-` $ ./main -f samples/jfk.wav`
+`$ ./main -f samples/jfk.wav`
 <img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/transcribe" width="600" height="400">
-
+6. I created a real-time audio input example:
+   <br>
+   `$ brew install sdl2`
