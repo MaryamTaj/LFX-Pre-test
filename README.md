@@ -29,8 +29,7 @@ $ cmake -GNinja -Bbuild -DCMAKE_BUILD_TYPE=Release \
 $ cmake --build build
   cmake –install build
 ```
-
-![convert-audio-to-text](./images/cmake_build.jpeg)
+![cmake_build](https://github.com/MaryamTaj/LFX-Pre-test/assets/109046900/19c04133-76e2-48c9-a6c3-5c5fc62ebc01)
 
 ## Model Selection:
 I chose the larger llama-2-13b parameter model, because it can answer more complex questions. I was curious to see its capabilities!
@@ -47,7 +46,7 @@ wasmedge --dir .:. \
   --nn-preload default:GGML:AUTO:llama-2-7b-chat.Q5_K_M.gguf \
   wasmedge-ggml-llama.wasm default
 ```
-<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/Execution" width="1000" height="400">
+![execution](https://github.com/MaryamTaj/LFX-Pre-test/assets/109046900/9b591ed2-eedb-411b-98da-2b1c0c4890fa)
 
 ## whisper.cpp
 
@@ -60,12 +59,14 @@ wasmedge --dir .:. \
 3. I then built the main example:
    <br>
 ` $ make`
-<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/make" width="800" height="500">
+![make](https://github.com/MaryamTaj/LFX-Pre-test/assets/109046900/e9582cf7-eed3-42a4-a8d6-4f408dac99da)
+
 
 5. I transcribed the audio file:
    <br>
 `$ ./main -f samples/jfk.wav`
-<img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/transcribe" width="600" height="400">
+![transcribe](https://github.com/MaryamTaj/LFX-Pre-test/assets/109046900/c4563026-4221-4c3b-8111-dc065c08e063)
+
 6. I created a real-time audio input example:
    <br>
 `$ brew install sdl2`
@@ -73,3 +74,7 @@ wasmedge --dir .:. \
 make stream
 ./stream -m ./models/ggml-base.en.bin -t 8 --step 500 --length 5000
 ```
+https://github.com/MaryamTaj/LFX-Pre-test/assets/109046900/1d29087b-6b0d-4dd6-b0c1-5adb3f4ccd39
+
+
+
