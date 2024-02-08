@@ -69,11 +69,13 @@ wasmedge --dir .:. \
 
 6. I created a real-time audio input example:
    <br>
-`$ brew install sdl2`
-```bash
-make stream
-./stream -m ./models/ggml-base.en.bin -t 8 --step 500 --length 5000
-```
+   I first installed sdl2, a library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware:
+   <br>
+   `$ brew install sdl2`
+  ```bash
+  make stream
+  ./stream -m ./models/ggml-base.en.bin -t 8 --step 500 --length 5000
+  ```
 https://github.com/MaryamTaj/LFX-Pre-test/assets/109046900/1d29087b-6b0d-4dd6-b0c1-5adb3f4ccd39
 
 
