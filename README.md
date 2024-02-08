@@ -69,4 +69,8 @@ wasmedge --dir .:. \
 <img src="https://github.com/MaryamTaj/LFX-Pre-test/blob/main/transcribe" width="600" height="400">
 6. I created a real-time audio input example:
    <br>
-   `$ brew install sdl2`
+`$ brew install sdl2`
+```bash
+make stream
+./stream -m ./models/ggml-base.en.bin -t 8 --step 500 --length 5000
+```
