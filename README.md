@@ -1,4 +1,13 @@
 # LFX-Mentorship-Proposal-3170
+# Table of Contents  
+* [About](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#about)
+* [Build](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#build)
+  * [Local Version](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#local-version)
+  * [Software Dependencies](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#software-dependencies)
+  * [Build WasmEdge with WASI-NN llama.cpp Backend](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#build-wasmedge-with-wasi-nn-llamacpp-backend)
+* [Model Selection](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#model-selection)
+* [Execution](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#execution)
+* [whisper.cpp](https://github.com/MaryamTaj/LFX-Pre-test?tab=readme-ov-file#whispercpp)
 
 ## About:
 This repository includes the pre-test for the LFX Mentorship (Mar-May, 2024) Proposal #3170: Integrate whisper.cpp as a new WASI-NN backend. You can find more details here: https://github.com/WasmEdge/WasmEdge/issues/3170
